@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>色相环练习</title>
+<style>
+@page { size: A4 portrait; margin: 14mm 13mm; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  color: #1f2937;
+  font-size: 11pt;
+  line-height: 1.65;
+}
+h1 { font-size: 21pt; margin: 0 0 1.5mm; }
+h2 { font-size: 14pt; margin: 6mm 0 3mm; }
+.sub { color: #6b7280; font-size: 9.5pt; margin: 0 0 4mm; }
+.wheel-wrap { text-align: center; }
+.wheel { width: 118mm; height: 118mm; }
+table.palette { border-collapse: collapse; width: 100%; font-size: 9pt; margin-top: 3mm; }
+table.palette th, table.palette td { border: 0.3pt solid #d7dee6; padding: 1.2mm 1.5mm; text-align: left; }
+table.palette th { background: #f1f5f9; color: #475569; font-weight: 600; }
+.chip { display: inline-block; width: 4mm; height: 4mm; border-radius: 1mm;
+  border: 0.3pt solid #cbd5e1; vertical-align: -0.5mm; margin-right: 1.2mm; }
+.mono { font-family: "SFMono-Regular", Consolas, monospace; color: #475569; }
+ol.items { margin: 0; padding: 0; list-style: none; display: grid;
+  grid-template-columns: 1fr 1fr; gap: 5mm; }
+li.item { border: 0.5pt solid #e2e8f0; border-radius: 2mm; padding: 3mm; page-break-inside: avoid; }
+.item-head { display: flex; align-items: flex-start; gap: 3mm; }
+.swatch { width: 18mm; height: 18mm; border-radius: 50%; flex: 0 0 auto;
+  border: 0.5pt solid #cbd5e1; }
+.prompt { margin: 0 0 2mm; font-size: 10.5pt; }
+.num { color: #b45309; font-weight: 600; }
+.line { border-bottom: 0.7pt solid #94a3b8; height: 7mm; }
+.answers { page-break-before: always; }
+.answers h2 { margin-top: 0; }
+.answers ol { margin: 0; padding-left: 7mm; }
+.answers li { margin-bottom: 3mm; }
+.answers .ans { color: #0f4c81; }
+.answers .chip { margin-left: 1.5mm; }
+</style>
+</head>
+<body>
+<h1>色相环练习</h1>
+<p class="sub">姓名：__________　班级：__________　日期：__________</p>
+<ol class="items">
+<li class="item"><div class="item-head"><div class="swatch" style="background:#ff0080"></div><div class="body"><p class="prompt"><span class="num">1.</span> 「品红」的互补色是什么？</p><div class="line"></div></div></div></li>
+<li class="item"><div class="item-head"><div class="swatch" style="background:#00ffff"></div><div class="body"><p class="prompt"><span class="num">2.</span> 与「青」相邻的两个邻近色是什么？</p><div class="line"></div></div></div></li>
+<li class="item"><div class="item-head"><div class="swatch" style="background:#ff00ff"></div><div class="body"><p class="prompt"><span class="num">3.</span> 与「紫红」组成三角配色的另外两种颜色是什么？</p><div class="line"></div></div></div></li>
+<li class="item"><div class="item-head"><div class="swatch" style="background:#00ffff"></div><div class="body"><p class="prompt"><span class="num">4.</span> 「青」的互补色是什么？</p><div class="line"></div></div></div></li>
+<li class="item"><div class="item-head"><div class="swatch" style="background:#ffff00"></div><div class="body"><p class="prompt"><span class="num">5.</span> 与「黄」相邻的两个邻近色是什么？</p><div class="line"></div></div></div></li>
+<li class="item"><div class="item-head"><div class="swatch" style="background:#ffff00"></div><div class="body"><p class="prompt"><span class="num">6.</span> 「黄」的互补色是什么？</p><div class="line"></div></div></div></li>
+<li class="item"><div class="item-head"><div class="swatch" style="background:#00ff00"></div><div class="body"><p class="prompt"><span class="num">7.</span> 与「绿」相邻的两个邻近色是什么？</p><div class="line"></div></div></div></li>
+<li class="item"><div class="item-head"><div class="swatch" style="background:#ff0000"></div><div class="body"><p class="prompt"><span class="num">8.</span> 写出这个颜色在色相环上的名称。</p><div class="line"></div></div></div></li>
+<li class="item"><div class="item-head"><div class="swatch" style="background:#007fff"></div><div class="body"><p class="prompt"><span class="num">9.</span> 与「蓝」组成三角配色的另外两种颜色是什么？</p><div class="line"></div></div></div></li>
+<li class="item"><div class="item-head"><div class="swatch" style="background:#00ff00"></div><div class="body"><p class="prompt"><span class="num">10.</span> 「绿」的互补色是什么？</p><div class="line"></div></div></div></li>
+<li class="item"><div class="item-head"><div class="swatch" style="background:#80ff00"></div><div class="body"><p class="prompt"><span class="num">11.</span> 「黄绿」的互补色是什么？</p><div class="line"></div></div></div></li>
+<li class="item"><div class="item-head"><div class="swatch" style="background:#00ffff"></div><div class="body"><p class="prompt"><span class="num">12.</span> 与「青」组成三角配色的另外两种颜色是什么？</p><div class="line"></div></div></div></li>
+</ol>
+<section class="answers">
+<h2>参考答案</h2>
+<ol>
+<li><span class="num">1.</span> <span class="ans">青绿</span><span class="chip" style="background:#00ff80"></span></li>
+<li><span class="num">2.</span> <span class="ans">青绿、蓝</span><span class="chip" style="background:#00ff80"></span><span class="chip" style="background:#007fff"></span></li>
+<li><span class="num">3.</span> <span class="ans">黄、青</span><span class="chip" style="background:#ffff00"></span><span class="chip" style="background:#00ffff"></span></li>
+<li><span class="num">4.</span> <span class="ans">红</span><span class="chip" style="background:#ff0000"></span></li>
+<li><span class="num">5.</span> <span class="ans">橙、黄绿</span><span class="chip" style="background:#ff8000"></span><span class="chip" style="background:#80ff00"></span></li>
+<li><span class="num">6.</span> <span class="ans">靛</span><span class="chip" style="background:#0000ff"></span></li>
+<li><span class="num">7.</span> <span class="ans">黄绿、青绿</span><span class="chip" style="background:#80ff00"></span><span class="chip" style="background:#00ff80"></span></li>
+<li><span class="num">8.</span> <span class="ans">红</span><span class="chip" style="background:#ff0000"></span></li>
+<li><span class="num">9.</span> <span class="ans">品红、黄绿</span><span class="chip" style="background:#ff0080"></span><span class="chip" style="background:#80ff00"></span></li>
+<li><span class="num">10.</span> <span class="ans">紫红</span><span class="chip" style="background:#ff00ff"></span></li>
+<li><span class="num">11.</span> <span class="ans">紫</span><span class="chip" style="background:#7f00ff"></span></li>
+<li><span class="num">12.</span> <span class="ans">紫红、黄</span><span class="chip" style="background:#ff00ff"></span><span class="chip" style="background:#ffff00"></span></li>
+</ol>
+</section>
+</body>
+</html>

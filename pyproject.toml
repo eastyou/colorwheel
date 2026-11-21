@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "colorwheel"
+version = "0.1.0"
+description = "色相环：配色计算、色环图与可打印练习纸"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["education", "color", "art", "design", "worksheet", "printable", "svg"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+dependencies = []
+
+[project.scripts]
+colorwheel = "colorwheel.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/colorwheel"
+Source = "https://github.com/eastyou/colorwheel"
+
+[tool.setuptools]
+packages = ["colorwheel"]
